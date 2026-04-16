@@ -61,9 +61,9 @@ md127 : inactive sdb[0](S)
 ```
 Запустил массив с одним диском:
 ```bash
-root@linux-prof:~# sudo mdadm --stop /dev/md127
+root@linux-prof:~# mdadm --stop /dev/md127
 mdadm: stopped /dev/md127
-root@linux-prof:~# sudo mdadm --assemble --force --run /dev/md1 /dev/sdb
+root@linux-prof:~# mdadm --assemble --force --run /dev/md1 /dev/sdb
 mdadm: /dev/md1 has been started with 1 drive (out of 2).
 root@linux-prof:~# cat /proc/mdstat
 Personalities : [raid0] [raid1] [raid4] [raid5] [raid6] [raid10] [linear]

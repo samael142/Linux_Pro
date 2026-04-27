@@ -1,3 +1,5 @@
+Работа с LVM.
+
 Добавим дисков в виртуальную машину
 ```bash
 root@linux-prof:~# lsblk
@@ -20,13 +22,7 @@ Filesystem                    Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-lv--0   18G  6.0G   11G  36% /
 ```
 Загрузимся с LiveCD И будем делать там:
-
-sudo vgchange -ay
-sudo lvs
-sudo e2fsck -f /dev/ubuntu-vg/lv-0
-sudo resize2fs /dev/ubuntu-vg/lv-0 8G
-sudo lvreduce -L 8G /dev/ubuntu-vg/lv-0
-
+<img width="1165" height="944" alt="lvreduce" src="https://github.com/user-attachments/assets/2aa31482-a717-4785-b383-6ebc1f9db114" />
 Проверим:
 ```bash
 root@linux-prof:~# lsblk
